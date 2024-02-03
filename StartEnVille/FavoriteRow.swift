@@ -17,8 +17,9 @@ struct FavoriteRow: View {
             Image(event.photo)
                 .resizable()
                 .scaledToFill()
-                .frame(width: 100, height: 100)
+                .frame(width: 120, height: 120)
                 .cornerRadius(15)
+                .padding(.trailing, 10)
             Spacer()
             VStack (alignment: .leading, spacing: 0) {
                 HStack {

@@ -9,14 +9,7 @@ import SwiftUI
 
 struct CapsuleCategory: View {
     
-    var categories = [
-        EventCategory(name: "food", color: Color.blue),
-        EventCategory(name: "sport", color: Color.purple),
-        EventCategory(name: "nature", color: Color.green),
-        EventCategory(name: "culture", color: Color.orange),
-        EventCategory(name: "language", color: Color.pink),
-        EventCategory(name: "start", color: Color.yellow)
-    ]
+    var categories: [EventCategory]
     
     var body: some View {
         ForEach(categories) { category in
@@ -32,5 +25,5 @@ struct CapsuleCategory: View {
 }
 
 #Preview {
-    CapsuleCategory()
+    CapsuleCategory(categories: categories)
 }

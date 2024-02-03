@@ -23,6 +23,7 @@ struct FavoritesView: View {
                     }
                 }
             }
+            .navigationTitle("Favoris")
         }
     }
 }

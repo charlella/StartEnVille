@@ -127,8 +127,8 @@ var events = [
     Event(
         title: "Rando dans les calanques",
         photo: "randocalanques",
-        location: CLLocationCoordinate2D(latitude: 43.2141, longitude: 5.4646), // Coordonnées fictives pour la Calanque de Morgiou
-        address: Address(place: "Calanque de Morgiou", number: "", street: "", city: "", postalCode: ""),
+        location: CLLocationCoordinate2D(latitude: 43.2109, longitude: 5.4459), // Coordonnées fictives pour la Calanque de Morgiou
+        address: Address(place: "Morgiou", number: "", street: "", city: "", postalCode: ""),
         dateTime: {
             var components = DateComponents()
             components.year = 2024
@@ -182,7 +182,7 @@ var events = [
     Event(
         title: "Palais Longchamp",
         photo: "palaislongchamp",
-        location: CLLocationCoordinate2D(latitude: 43.2141, longitude: 5.4646), // Coordonnées fictives pour le Palais Longchamp
+        location: CLLocationCoordinate2D(latitude: 43.3049, longitude: 5.3942),
         address: Address(place: "Palais Longchamp", number: "", street: "", city: "", postalCode: ""),
         dateTime: {
             var components = DateComponents()
@@ -237,7 +237,7 @@ var events = [
     Event(
         title: "BeachVolley",
         photo: "beachvolley",
-        location: CLLocationCoordinate2D(latitude: 43.2667, longitude: 5.3750), // Coordonnées de la plage du Prado à Marseille (valeurs fictives)
+        location: CLLocationCoordinate2D(latitude: 43.2628, longitude: 5.3714), 
         address: Address(place: "Plage du Prado", number: "", street: "Avenue du Prado", city: "Marseille", postalCode: "13008"),
         dateTime: {
             var components = DateComponents()

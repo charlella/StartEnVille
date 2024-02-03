@@ -6,13 +6,26 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct SearchMapView: View {
+    var events: [Event]
+    
+    var categories: [EventCategory]
+     
     var body: some View {
-        Text("SearchMapView")
+        ZStack {
+            MapView(events: events)
+            VStack(alignment: .trailing) {
+            CapsuleCategory(categories: categories)
+                }
+            .padding(.leading, 270)
+        }
+        
     }
-}
+ }
+
 
 #Preview {
-    SearchMapView()
+    SearchMapView(events: events, categories: categories)
 }
