@@ -25,6 +25,8 @@
 		BA7B3E032B6D2CDF00F81921 /* FavoriteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3E022B6D2CDF00F81921 /* FavoriteRow.swift */; };
 		BA7B3E062B6D83E200F81921 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3E052B6D83E200F81921 /* MapView.swift */; };
 		BA7B3E082B6D8AE800F81921 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3E072B6D8AE800F81921 /* SearchBar.swift */; };
+		BA7B3E0A2B6F7E9500F81921 /* SearchMapSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3E092B6F7E9500F81921 /* SearchMapSheet.swift */; };
+		BA7B3E0C2B70EBAF00F81921 /* SearchMapSheetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3E0B2B70EBAF00F81921 /* SearchMapSheetRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		BA7B3E022B6D2CDF00F81921 /* FavoriteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRow.swift; sourceTree = "<group>"; };
 		BA7B3E052B6D83E200F81921 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		BA7B3E072B6D8AE800F81921 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		BA7B3E092B6F7E9500F81921 /* SearchMapSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMapSheet.swift; sourceTree = "<group>"; };
+		BA7B3E0B2B70EBAF00F81921 /* SearchMapSheetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMapSheetRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				BA7B3DE62B6C1D3800F81921 /* SearchView.swift */,
+				BA7B3E092B6F7E9500F81921 /* SearchMapSheet.swift */,
+				BA7B3E0B2B70EBAF00F81921 /* SearchMapSheetRow.swift */,
 				BA7B3DE82B6C1D6800F81921 /* SearchMapView.swift */,
 				BA7B3DEA2B6C1D7B00F81921 /* SearchListView.swift */,
 				BA7B3E072B6D8AE800F81921 /* SearchBar.swift */,
@@ -246,6 +252,7 @@
 				BA7B3DDA2B6C1BAD00F81921 /* ContentView.swift in Sources */,
 				BA7B3DFD2B6CF8F500F81921 /* Event.swift in Sources */,
 				BA7B3DE92B6C1D6800F81921 /* SearchMapView.swift in Sources */,
+				BA7B3E0C2B70EBAF00F81921 /* SearchMapSheetRow.swift in Sources */,
 				BA7B3DE72B6C1D3800F81921 /* SearchView.swift in Sources */,
 				BA7B3E012B6D1DFA00F81921 /* CapsuleCategory.swift in Sources */,
 				BA7B3E082B6D8AE800F81921 /* SearchBar.swift in Sources */,
@@ -259,6 +266,7 @@
 				BA7B3DEE2B6C1DA500F81921 /* CreateView.swift in Sources */,
 				BA7B3DF12B6C1DC800F81921 /* ProfileView.swift in Sources */,
 				BA7B3DEB2B6C1D7B00F81921 /* SearchListView.swift in Sources */,
+				BA7B3E0A2B6F7E9500F81921 /* SearchMapSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

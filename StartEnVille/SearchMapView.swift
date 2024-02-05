@@ -9,19 +9,24 @@ import SwiftUI
 import MapKit
 
 struct SearchMapView: View {
+   
     var events: [Event]
     
     var categories: [EventCategory]
      
     var body: some View {
         ZStack {
-            MapView(events: events)
+            MapView(events: filteredEvents)
             VStack(alignment: .trailing) {
-            CapsuleCategory(categories: categories)
-                }
+                CapsuleCategory(categories: categories)
+            }
             .padding(.leading, 270)
         }
-        
+    }
+
+    private var filteredEvents: [Event] {
+        // Le filtre est fait sur SearchView
+        return events
     }
  }
 

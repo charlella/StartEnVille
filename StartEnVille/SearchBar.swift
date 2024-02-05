@@ -24,7 +24,7 @@ struct SearchBar: View {
                 .keyboardType(.alphabet)
                 .overlay(RoundedRectangle(cornerRadius: 8)
                 .stroke(.teal, lineWidth: 2))
-                .foregroundColor(.white)
+                .foregroundColor(.black)
                 .accentColor(.white)
                 .opacity(text.isEmpty ? 0.8 : 1.0)
             

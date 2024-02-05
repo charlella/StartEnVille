@@ -9,12 +9,43 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+    @State var mapFeature: MapFeature?
+    @State private var selectedEvent: Event?
     var events: [Event]
     
     var body: some View {
-        Map(coordinateRegion: .constant(region), showsUserLocation: false, userTrackingMode: .none, annotationItems: events) { event in
-            MapPin(coordinate: event.location, tint: event.categories.first?.color ?? .blue)
+        Map(initialPosition: .region(region), selection: $mapFeature) {
+            ForEach(events) { event in
+                Annotation(coordinate: event.location) {
+                    Image(systemName: "mappin")
+                        .foregroundStyle(event.categories.first?.color ?? .blue)
+                        .onTapGesture {
+                            selectedEvent = event
+                        }
+                } label: {
+                    Text(event.title)
+                }
+//                Marker(coordinate: event.location) {
+//                    Text("a")
+//                        .onTapGesture {
+//                            print("a")
+//                        }
+//                }
+            }
         }
+//        Map(coordinateRegion: .constant(region), showsUserLocation: false, userTrackingMode: .none, annotationItems: events) { event in
+//            MapPin(coordinate: event.location, tint: event.categories.first?.color ?? .blue)
+//                .onTapGesture {
+//                    selectedEvent = event
+//                    showingSheet.toggle()
+//                }
+//        }
+
+        .sheet(item: $selectedEvent, content: { event in
+            //Text(event.description)
+            SearchMapSheet(event: event)
+        })
+
         .onAppear {
             //
         }
@@ -43,6 +74,6 @@ struct MapView: View {
 }
 
 #Preview {
-        MapView(events: events)
+    MapView(events: events)
     
 }
