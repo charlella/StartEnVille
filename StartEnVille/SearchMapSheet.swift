@@ -26,10 +26,13 @@ struct SearchMapSheet: View {
                         }
                     }
                 }
+              //  .frame(maxHeight: 500)
+
             }
-            .frame(maxHeight: .infinity)
-            .navigationTitle("Aperçu")
-            .navigationBarTitleDisplayMode(.inline)
+            .padding(.vertical, 5)
+//            .navigationTitle("Aperçu")
+//            .navigationBarTitleDisplayMode(.inline)
+          //  .fixedSize(horizontal: false, vertical: true)
         }
     }
 }

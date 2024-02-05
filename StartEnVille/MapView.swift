@@ -17,7 +17,7 @@ struct MapView: View {
         Map(initialPosition: .region(region), selection: $mapFeature) {
             ForEach(events) { event in
                 Annotation(coordinate: event.location) {
-                    Image(systemName: "mappin")
+                    Image(systemName: "mappin.circle.fill")
                         .foregroundStyle(event.categories.first?.color ?? .blue)
                         .onTapGesture {
                             selectedEvent = event
@@ -44,6 +44,9 @@ struct MapView: View {
         .sheet(item: $selectedEvent, content: { event in
             //Text(event.description)
             SearchMapSheet(event: event)
+                .padding(.top)
+                .presentationDetents([.fraction(0.25)])
+                .presentationDragIndicator(.hidden)
         })
 
         .onAppear {

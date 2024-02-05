@@ -17,10 +17,6 @@ struct SearchView: View {
             VStack(spacing: 0) {
                 SearchBar(text: $searchText, placeholder: "Rechercher un évènement")
                     .padding()
-                    
-//                    .onChang(of: searchText) { _ in
-//                        updateSearchResults()
-//                    }
                     .background(Color.teal)
                 
                 SearchMapView(events: filteredEvents, categories: categories)
@@ -49,11 +45,6 @@ struct SearchView: View {
             event.title.localizedCaseInsensitiveContains(searchText)
         }
     }
-//    
-//    private func updateSearchResults() {
-//        
-//    }
-    
 }
 
 #Preview {
