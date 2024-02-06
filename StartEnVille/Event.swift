@@ -127,7 +127,7 @@ var events = [
     Event(
         title: "Rando Calanques",
         photo: "randocalanques",
-        location: CLLocationCoordinate2D(latitude: 43.2109, longitude: 5.4459), // Coordonnées fictives pour la Calanque de Morgiou
+        location: CLLocationCoordinate2D(latitude: 43.2109, longitude: 5.4459),
         address: Address(place: "Morgiou", number: "", street: "", city: "", postalCode: ""),
         dateTime: {
             var components = DateComponents()
@@ -289,15 +289,318 @@ var events = [
         categories: [EventCategory(name: "sport", color: Color.purple), EventCategory(name: "nature", color: Color.green)],
         discussion: []
     ),
+    Event(
+            title: "Concert",
+            photo: "batucada",
+            location: CLLocationCoordinate2D(latitude: 43.3050, longitude: 5.3665),
+            address: Address(place: "La Joliette", number: "", street: "Pl. de la Joliette", city: "Marseille", postalCode: "13002"),
+            dateTime: {
+                var components = DateComponents()
+                components.year = 2024
+                components.month = 2
+                components.day = 16
+                components.hour = 12
+                components.minute = 0
+                components.timeZone = TimeZone(identifier: "Europe/Paris")
+                return Calendar.current.date(from: components)!
+            }(),
+            description: "Concert Percusion Afro-Brésilienne. Le group Mulêketú vous transporte avec énergie et sensualité dans le ballet chaloupé de ses percussions mobiles : une performance chorégraphiée où rythme et danse ne font qu'un os oreilles vont en prendre plein les yeux!",
+            isFree: true,
+            price: nil,
+            author: User(
+                name: "Lola",
+                photo: "lola_image.png",
+                favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "sport", color: Color.purple)],
+                age: 28,
+                pastEvents: [],
+                futureEvents: []
+            ),
+            participants: [
+                User(
+                    name: "Mireille",
+                    photo: "mireille_image.png",
+                    favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "nature", color: Color.green)],
+                    age: 35,
+                    pastEvents: [],
+                    futureEvents: []
+                ),
+                User(
+                    name: "Mo",
+                    photo: "mo_image.png",
+                    favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+                    age: 22,
+                    pastEvents: [],
+                    futureEvents: []
+                ),
+                User(
+                    name: "Samira",
+                    photo: "samira_image.png",
+                    favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+                    age: 23,
+                    pastEvents: [],
+                    futureEvents: []
+                ),
+                User(
+                    name: "Stéphanie",
+                    photo: "stephanie_image.png",
+                    favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "food", color: Color.blue)],
+                    age: 33,
+                    pastEvents: [],
+                    futureEvents: []
+                ),
+                User(
+                    name: "Nina",
+                    photo: "nina_image.png",
+                    favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "culture", color: Color.orange)],
+                    age: 29,
+                    pastEvents: [],
+                    futureEvents: []
+                )
+            ],
+            categories: [EventCategory(name: "culture", color: Color.orange),EventCategory(name: "langue", color: Color.pink)],
+            discussion: []
+        ),
+    Event(
+        title: "Café entre amis",
+        photo: "cafe",
+        location: CLLocationCoordinate2D(latitude: 43.2907676, longitude: 5.3808014),
+        address: Address(place: "Le Café de la Banque", number: "24", street: "Bd Paul Peytral", city: "Marseille", postalCode: "13006"),
+        dateTime: {
+            var components = DateComponents()
+            components.year = 2024
+            components.month = 2
+            components.day = 17
+            components.hour = 15
+            components.minute = 0
+            components.timeZone = TimeZone(identifier: "Europe/Paris")
+            return Calendar.current.date(from: components)!
+        }(),
+        description: "Décompresser, échanger et faire de nouvelles connaissances autour d'un petit café!",
+        isFree: true,
+        price: nil,
+        author:  User(
+            name: "Mireille",
+            photo: "mireille_image.png",
+            favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "nature", color: Color.green)],
+            age: 35,
+            pastEvents: [],
+            futureEvents: []
+        ),
+        participants: [
+            
+            User(
+                name: "Mo",
+                photo: "mo_image.png",
+                favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+                age: 22,
+                pastEvents: [],
+                futureEvents: []
+            ),
+            User(
+                name: "Samira",
+                photo: "samira_image.png",
+                favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+                age: 23,
+                pastEvents: [],
+                futureEvents: []
+            ),
+            User(
+                name: "Stéphanie",
+                photo: "stephanie_image.png",
+                favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "food", color: Color.blue)],
+                age: 33,
+                pastEvents: [],
+                futureEvents: []
+            ),
+            User(
+                name: "Nina",
+                photo: "nina_image.png",
+                favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "culture", color: Color.orange)],
+                age: 29,
+                pastEvents: [],
+                futureEvents: []
+            )
+        ],
+        categories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "langue", color: Color.pink)],
+        discussion: []
+    ),
+    Event(
+        title: "Match OM",
+        photo: "match",
+        location: CLLocationCoordinate2D(latitude: 43.269827, longitude: 5.3958873),
+        address: Address(place: "Stade Vélodrome", number: "3", street: "Boulevard Michelet", city: "Marseille", postalCode: "13008"),
+        dateTime: {
+            var components = DateComponents()
+            components.year = 2024
+            components.month = 2
+            components.day = 23
+            components.hour = 19
+            components.minute = 30
+            components.timeZone = TimeZone(identifier: "Europe/Paris")
+            return Calendar.current.date(from: components)!
+        }(),
+        description: "Rdv devant la boutique officielle OM ",
+        isFree: false,
+        price: 50,
+        author:  User(
+            name: "Mireille",
+            photo: "mireille_image.png",
+            favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "nature", color: Color.green)],
+            age: 35,
+            pastEvents: [],
+            futureEvents: []
+        ),
+        participants: [
+            
+            User(
+                name: "Mo",
+                photo: "mo_image.png",
+                favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+                age: 22,
+                pastEvents: [],
+                futureEvents: []
+            ),
+            User(
+                name: "Samira",
+                photo: "samira_image.png",
+                favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+                age: 23,
+                pastEvents: [],
+                futureEvents: []
+            ),
+            User(
+                name: "Stéphanie",
+                photo: "stephanie_image.png",
+                favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "food", color: Color.blue)],
+                age: 33,
+                pastEvents: [],
+                futureEvents: []
+            ),
+            User(
+                name: "Nina",
+                photo: "nina_image.png",
+                favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "culture", color: Color.orange)],
+                age: 29,
+                pastEvents: [],
+                futureEvents: []
+            )
+        ],
+        categories: [EventCategory(name: "sport", color: Color.purple),EventCategory(name: "culture", color: Color.orange)],
+        discussion: []
+    ),
+    Event(
+            title: "Apéro",
+            photo: "apero",
+            location: CLLocationCoordinate2D(latitude: 43.269827, longitude: 5.3958873),
+            address: Address(place: "Le Bar de la Plaine", number: "57", street: "Pl Jean Jaurès", city: "Marseille", postalCode: "13005"),
+            dateTime: {
+                var components = DateComponents()
+                components.year = 2024
+                components.month = 2
+                components.day = 23
+                components.hour = 18
+                components.minute = 0
+                components.timeZone = TimeZone(identifier: "Europe/Paris")
+                return Calendar.current.date(from: components)!
+            }(),
+            description: "Apéro",
+            isFree: true,
+            price: nil,
+            author:  User(
+                name: "Stéphanie",
+                photo: "stephanie_image.png",
+                favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "food", color: Color.blue)],
+                age: 33,
+                pastEvents: [],
+                futureEvents: []
+            ),
+            participants: [
+               
+                User(
+                    name: "Mo",
+                    photo: "mo_image.png",
+                    favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+                    age: 22,
+                    pastEvents: [],
+                    futureEvents: []
+                ),
+                User(
+                    name: "Samira",
+                    photo: "samira_image.png",
+                    favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+                    age: 23,
+                    pastEvents: [],
+                    futureEvents: []
+                ),
+               
+                User(
+                    name: "Nina",
+                    photo: "nina_image.png",
+                    favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "culture", color: Color.orange)],
+                    age: 29,
+                    pastEvents: [],
+                    futureEvents: []
+                )
+            ],
+            categories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "langue", color: Color.pink)],
+            discussion: []
+        ),
+    Event(
+        title: "Visite Abbaye",
+        photo: "abbaye",
+        location: CLLocationCoordinate2D(latitude: 43.29002, longitude: 5.36532),
+        address: Address(place: "Abbaye Saint-Victor", number: "", street: "Pl Saint-Victor", city: "Marseille", postalCode: "13007"),
+        dateTime: {
+            var components = DateComponents()
+            components.year = 2024
+            components.month = 2
+            components.day = 24
+            components.hour = 11
+            components.minute = 0
+            components.timeZone = TimeZone(identifier: "Europe/Paris")
+            return Calendar.current.date(from: components)!
+        }(),
+        description: "Visite Abbaye Saint-Victor",
+        isFree: true,
+        price: nil,
+        author: User(
+            name: "Samira",
+            photo: "samira_image.png",
+            favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+            age: 23,
+            pastEvents: [],
+            futureEvents: []
+        ),
+        participants: [
+            User(
+                name: "Mo",
+                photo: "mo_image.png",
+                favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+                age: 22,
+                pastEvents: [],
+                futureEvents: []
+            ),
+            
+            User(
+                name: "Nina",
+                photo: "nina_image.png",
+                favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "culture", color: Color.orange)],
+                age: 29,
+                pastEvents: [],
+                futureEvents: []
+            )
+        ],
+        categories: [EventCategory(name: "culture", color: Color.orange), EventCategory(name: "start", color: Color.yellow)],
+        discussion: []
+    )
+    ]
 
-    
-]
 
 var categories = [
     EventCategory(name: "food", color: Color.blue),
     EventCategory(name: "sport", color: Color.purple),
     EventCategory(name: "nature", color: Color.green),
     EventCategory(name: "culture", color: Color.orange),
-    EventCategory(name: "language", color: Color.pink),
+    EventCategory(name: "langue", color: Color.pink),
     EventCategory(name: "start", color: Color.yellow)
 ]

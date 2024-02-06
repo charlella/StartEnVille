@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchView: View {
     @State private var searchText = ""
-    @State private var selectedMenu = "Map"
+    @State private var selectedMenu = "Carte"
     
     //var event: Event
     
@@ -27,7 +27,7 @@ struct SearchView: View {
                            }
                            .background(Color(red: 0/255, green: 113/255, blue: 164/255))
                            
-                           if selectedMenu == "Map" {
+                           if selectedMenu == "Carte" {
                                SearchMapView(events: filteredEvents, categories: categories)
                            } else {
                                SearchListView()
@@ -36,8 +36,8 @@ struct SearchView: View {
                        
 
                        Picker("Menu", selection: $selectedMenu) {
-                           Text("Map").tag("Map")
-                           Text("List").tag("List")
+                           Text("Carte").tag("Carte")
+                           Text("Liste").tag("Liste")
                        }
                        .pickerStyle(SegmentedPickerStyle())
                        .frame(width: 300)
