@@ -10,6 +10,7 @@ import SwiftUI
 struct CapsuleCategory: View {
     
     var categories: [EventCategory]
+    @State var selectedCategory: EventCategory?
     
     var body: some View {
         ForEach(categories) { category in
@@ -20,10 +21,13 @@ struct CapsuleCategory: View {
                 .background(category.color)
                 .foregroundStyle(.white)
                 .clipShape(.capsule)
+                .onTapGesture {
+                    selectedCategory = category
+                }
         }
     }
 }
 
-#Preview {
-    CapsuleCategory(categories: categories)
-}
+//#Preview {
+//    CapsuleCategory(categories: categories, selectedCategory: category)
+//}

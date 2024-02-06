@@ -125,7 +125,7 @@ var events = [
         discussion: []
     ),
     Event(
-        title: "Rando dans les calanques",
+        title: "Rando Calanques",
         photo: "randocalanques",
         location: CLLocationCoordinate2D(latitude: 43.2109, longitude: 5.4459), // Coordonnées fictives pour la Calanque de Morgiou
         address: Address(place: "Morgiou", number: "", street: "", city: "", postalCode: ""),
@@ -183,7 +183,7 @@ var events = [
         title: "Palais Longchamp",
         photo: "palaislongchamp",
         location: CLLocationCoordinate2D(latitude: 43.3049, longitude: 5.3942),
-        address: Address(place: "Palais Longchamp", number: "", street: "", city: "", postalCode: ""),
+        address: Address(place: "Longchamp", number: "", street: "", city: "", postalCode: ""),
         dateTime: {
             var components = DateComponents()
             components.year = 2024
@@ -262,8 +262,8 @@ var events = [
         ),
         participants: [
             User(
-                name: "Mireille",
-                photo: "mireille_image.png",
+                name: "Lola",
+                photo: "lola_image.png",
                 favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "nature", color: Color.green)],
                 age: 35,
                 pastEvents: [],

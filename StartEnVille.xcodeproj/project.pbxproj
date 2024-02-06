@@ -27,6 +27,8 @@
 		BA7B3E082B6D8AE800F81921 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3E072B6D8AE800F81921 /* SearchBar.swift */; };
 		BA7B3E0A2B6F7E9500F81921 /* SearchMapSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3E092B6F7E9500F81921 /* SearchMapSheet.swift */; };
 		BA7B3E0C2B70EBAF00F81921 /* SearchMapSheetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3E0B2B70EBAF00F81921 /* SearchMapSheetRow.swift */; };
+		BA7B3E0E2B72106500F81921 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3E0D2B72106500F81921 /* ChatRow.swift */; };
+		BA7B3E102B72114700F81921 /* ChatEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3E0F2B72114700F81921 /* ChatEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		BA7B3E072B6D8AE800F81921 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		BA7B3E092B6F7E9500F81921 /* SearchMapSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMapSheet.swift; sourceTree = "<group>"; };
 		BA7B3E0B2B70EBAF00F81921 /* SearchMapSheetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMapSheetRow.swift; sourceTree = "<group>"; };
+		BA7B3E0D2B72106500F81921 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		BA7B3E0F2B72114700F81921 /* ChatEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				BA7B3DF62B6C1EA600F81921 /* ChatView.swift */,
+				BA7B3E0F2B72114700F81921 /* ChatEvent.swift */,
+				BA7B3E0D2B72106500F81921 /* ChatRow.swift */,
 			);
 			name = Chat;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 				BA7B3DFD2B6CF8F500F81921 /* Event.swift in Sources */,
 				BA7B3DE92B6C1D6800F81921 /* SearchMapView.swift in Sources */,
 				BA7B3E0C2B70EBAF00F81921 /* SearchMapSheetRow.swift in Sources */,
+				BA7B3E102B72114700F81921 /* ChatEvent.swift in Sources */,
 				BA7B3DE72B6C1D3800F81921 /* SearchView.swift in Sources */,
 				BA7B3E012B6D1DFA00F81921 /* CapsuleCategory.swift in Sources */,
 				BA7B3E082B6D8AE800F81921 /* SearchBar.swift in Sources */,
@@ -260,6 +267,7 @@
 				BA7B3DD82B6C1BAD00F81921 /* StartEnVilleApp.swift in Sources */,
 				BA7B3E062B6D83E200F81921 /* MapView.swift in Sources */,
 				BA7B3DF72B6C1EA600F81921 /* ChatView.swift in Sources */,
+				BA7B3E0E2B72106500F81921 /* ChatRow.swift in Sources */,
 				BA7B3E032B6D2CDF00F81921 /* FavoriteRow.swift in Sources */,
 				BA7B3DF42B6C1E4500F81921 /* FavoritesView.swift in Sources */,
 				BA7B3DFF2B6CF99B00F81921 /* User.swift in Sources */,

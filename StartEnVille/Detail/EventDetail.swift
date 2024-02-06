@@ -12,7 +12,11 @@ struct EventDetail: View {
     var data: Event
     
     var body: some View {
-        Text("EventDetail")
+        NavigationView {
+            Text("EventDetail")
+        }
+        //.presentationDetents([.fraction(1)])
+        //.presentationDragIndicator(.hidden)
         //Text(event.title)
     }
 }

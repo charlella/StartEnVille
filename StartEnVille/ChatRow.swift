@@ -1,15 +1,14 @@
 //
-//  FavoriteRow.swift
+//  ChatRow.swift
 //  StartEnVille
 //
-//  Created by charlene hoareau on 02/02/2024.
+//  Created by charlene hoareau on 06/02/2024.
 //
 
 import SwiftUI
 
-struct FavoriteRow: View {
+struct ChatRow: View {
     var event: Event
-    //categories
     
     var body: some View {
         HStack {
@@ -19,7 +18,7 @@ struct FavoriteRow: View {
                 .scaledToFill()
                 .frame(width: 120, height: 120)
                 .cornerRadius(15)
-                .padding(.trailing, 7)
+                .padding(.trailing, 10)
             Spacer()
             VStack (alignment: .leading, spacing: 0) {
                 HStack {
@@ -28,9 +27,8 @@ struct FavoriteRow: View {
                         .fontWeight(.bold)
 //                    Image(systemName: "person.2.fill")
 //                    Text("4")
-//                    Spacer()
-                    Image(systemName: "heart.fill")
-                        .foregroundStyle(.red)
+//                    Image(systemName: "heart.fill")
+//                        .foregroundStyle(.red)
                 }
                 .padding(.bottom, 5)
                 Text(event.formattedDate)
@@ -62,6 +60,7 @@ struct FavoriteRow: View {
     }
 }
 
+
 #Preview {
-    FavoriteRow(event: events[0])
+    ChatRow(event: events[0])
 }

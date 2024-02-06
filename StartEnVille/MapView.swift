@@ -45,9 +45,18 @@ struct MapView: View {
             //Text(event.description)
             SearchMapSheet(event: event)
                 .padding(.top)
-                .presentationDetents([.fraction(0.25)])
-                .presentationDragIndicator(.hidden)
+                .presentationDetents([.fraction(0.25), .fraction(0.5), .fraction(0.75), .fraction(0.9)])
+                //.presentationDragIndicator(.hidden)
         })
+//        .fullScreenCover(item: $selectedEvent) { event in
+//                    NavigationView {
+//                        EventDetail(data: event)
+//                            .navigationBarTitleDisplayMode(.inline)
+//                            .navigationBarItems(leading: Button("Fermer") {
+//                                selectedEvent = nil
+//                            })
+//                    }
+//                }
 
         .onAppear {
             //
