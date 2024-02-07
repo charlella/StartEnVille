@@ -11,14 +11,16 @@ import MapKit
 struct FavoritesView: View {
     //events
     //categories
+    @State private var showFavoritesOnly = true
+    var events: [Event]
     
     var body: some View {
         NavigationStack {
-            //Début du HEADER
             ZStack(alignment: .top) {
                 Color(red: 0/255, green: 113/255, blue: 164/255)
                     .frame(maxWidth: .infinity)
                     .ignoresSafeArea()
+                
                 VStack(spacing: 0) {
                     VStack(spacing: 0) {
                         Text("Favoris")
@@ -27,22 +29,30 @@ struct FavoritesView: View {
                             .accessibilityAddTraits(.isHeader)
                     }
                     .padding()
-                    // fin du HEADER
-                    VStack {
-                        List(events) { event in
-                            NavigationLink {
-                                EventDetail(data: event)
-                            } label: {
-                                FavoriteRow(event: event)
+                    
+                    if favoriteEvents.isEmpty {
+                        Text("Pas encore d'évènements en favoris")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                            .padding()
+                    } else {
+                        VStack {
+                            List(favoriteEvents) { event in
+                                NavigationLink(destination: EventDetail(event: event)) {
+                                    FavoriteRow(event: event)
+                                }
                             }
                         }
                     }
-//                    .navigationTitle("Favoris")
                 }
             }
         }
     }
+    
+    private var favoriteEvents: [Event] {
+        return events.filter { $0.isFavorite }
+    }
 }
 #Preview {
-    FavoritesView()
+    FavoritesView(events: events)
 }

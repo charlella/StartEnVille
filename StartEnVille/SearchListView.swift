@@ -22,7 +22,7 @@ struct SearchListView: View {
                                 HStack  {
                                     ForEach(events [0...2]) { event in
                                         NavigationLink {
-                                            EventDetail(data: event)
+                                            EventDetail(event: event)
                                         } label: {
                                             ListRow(event: event)
                                         }
@@ -44,7 +44,7 @@ struct SearchListView: View {
                                 HStack  {
                                     ForEach(events [3...5]) { event in
                                         NavigationLink {
-                                            EventDetail(data: event)
+                                            EventDetail(event: event)
                                         } label: {
                                             ListRow(event: event)
                                         }
@@ -64,7 +64,7 @@ struct SearchListView: View {
                                 HStack  {
                                     ForEach(events [6...8]) { event in
                                         NavigationLink {
-                                            EventDetail(data: event)
+                                            EventDetail(event: event)
                                         } label: {
                                             ListRow(event: event)
                                         }

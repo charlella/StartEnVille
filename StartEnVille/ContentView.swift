@@ -41,7 +41,7 @@ struct ContentView: View {
                                 Text("Créer")
                             }
                         
-                        FavoritesView()
+                        FavoritesView(events: events)
                             .tabItem {
                                 Image(systemName: "heart.fill")
                                 Text("Favoris")
@@ -63,6 +63,8 @@ struct ContentView: View {
                     .toolbarBackground(Color.white.opacity(0.1), for: .tabBar)
                 }
                 .accentColor(Color(red: 0/255, green: 113/255, blue: 164/255))
+                
+                //
             }
         }
     }

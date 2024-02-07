@@ -29,6 +29,7 @@ struct Event: Identifiable {
     var participants: [User]
     var categories: [EventCategory]
     var discussion: [Message]
+    var isFavorite: Bool
 }
 
 struct Address {
@@ -128,7 +129,8 @@ var events = [
             )
         ],
         categories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "nature", color: Color.green)],
-        discussion: []
+        discussion: [],
+        isFavorite: true
     ),
     Event(
         title: "Rando Calanques",
@@ -187,7 +189,8 @@ var events = [
             )
         ],
         categories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
-        discussion: []
+        discussion: [],
+        isFavorite: true
     ),
     Event(
         title: "Palais Longchamp",
@@ -246,7 +249,8 @@ var events = [
             )
         ],
         categories: [EventCategory(name: "culture", color: Color.orange), EventCategory(name: "langue", color: Color.pink)],
-        discussion: []
+        discussion: [],
+        isFavorite: false
     ),
     Event(
         title: "BeachVolley",
@@ -305,7 +309,8 @@ var events = [
             )
         ],
         categories: [EventCategory(name: "sport", color: Color.purple), EventCategory(name: "nature", color: Color.green)],
-        discussion: []
+        discussion: [],
+        isFavorite: false
     ),
     Event(
             title: "Concert",
@@ -382,7 +387,8 @@ var events = [
                 )
             ],
             categories: [EventCategory(name: "culture", color: Color.orange),EventCategory(name: "langue", color: Color.pink)],
-            discussion: []
+            discussion: [],
+            isFavorite: false
         ),
     Event(
         title: "Café entre amis",
@@ -451,7 +457,8 @@ var events = [
             )
         ],
         categories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "langue", color: Color.pink)],
-        discussion: []
+        discussion: [],
+        isFavorite: false
     ),
     Event(
         title: "Match OM",
@@ -520,7 +527,8 @@ var events = [
             )
         ],
         categories: [EventCategory(name: "sport", color: Color.purple),EventCategory(name: "culture", color: Color.orange)],
-        discussion: []
+        discussion: [],
+        isFavorite: false
     ),
     Event(
             title: "Apéro",
@@ -581,7 +589,8 @@ var events = [
                 )
             ],
             categories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "langue", color: Color.pink)],
-            discussion: []
+            discussion: [],
+            isFavorite: false
         ),
     Event(
         title: "Visite Abbaye",
@@ -632,7 +641,8 @@ var events = [
             )
         ],
         categories: [EventCategory(name: "culture", color: Color.orange), EventCategory(name: "start", color: Color.yellow)],
-        discussion: []
+        discussion: [],
+        isFavorite: false
     )
     ]
 

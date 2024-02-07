@@ -14,14 +14,22 @@ struct SearchView: View {
     //var event: Event
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
                    ZStack(alignment: .top) {
                        VStack(spacing: 0) {
                            VStack(spacing: 0) {
-                               Text("Start-en-ville")
-                                   .font(.title.bold())
-                                   .foregroundStyle(Color(red: 255/255, green: 204/255, blue: 0/255))
-                                   .accessibilityAddTraits(.isHeader)
+                               HStack {
+                                   Spacer()
+                                   Text("Start-en-ville")
+                                       .font(.title.bold())
+                                       .accessibilityAddTraits(.isHeader)
+                                       .padding(.leading, 50)
+                                   Image(systemName: "play.circle.fill")
+                                       .font(.title.bold())
+                                       .padding(.leading, 20)
+                                   Spacer()
+                               }
+                               .foregroundStyle(Color(red: 255/255, green: 204/255, blue: 0/255))
                                SearchBar(text: $searchText, placeholder: "Rechercher un évènement")
                                    .padding()
                            }

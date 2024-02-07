@@ -18,7 +18,7 @@ struct SearchMapSheet: View {
                 LazyVStack {
                     NavigationLink {
                         if let event = event {
-                            EventDetail(data: event)
+                            EventDetail(event: event)
                         }
                     } label: {
                         if let event = event {

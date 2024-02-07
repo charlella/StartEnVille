@@ -34,6 +34,7 @@
 		BA7B3E162B72AE5F00F81921 /* EventParticipants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3E152B72AE5F00F81921 /* EventParticipants.swift */; };
 		BA7B3E182B72AE9B00F81921 /* EventParticipantsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3E172B72AE9B00F81921 /* EventParticipantsRow.swift */; };
 		BA7B3E1A2B737D5C00F81921 /* EventAuthorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3E192B737D5C00F81921 /* EventAuthorRow.swift */; };
+		BA7B3E1C2B73B4F200F81921 /* GroupChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3E1B2B73B4F200F81921 /* GroupChat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		BA7B3E152B72AE5F00F81921 /* EventParticipants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventParticipants.swift; sourceTree = "<group>"; };
 		BA7B3E172B72AE9B00F81921 /* EventParticipantsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventParticipantsRow.swift; sourceTree = "<group>"; };
 		BA7B3E192B737D5C00F81921 /* EventAuthorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAuthorRow.swift; sourceTree = "<group>"; };
+		BA7B3E1B2B73B4F200F81921 /* GroupChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupChat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				BA7B3DF82B6C1F1C00F81921 /* EventDetail.swift */,
+				BA7B3E1B2B73B4F200F81921 /* GroupChat.swift */,
 				BA7B3E152B72AE5F00F81921 /* EventParticipants.swift */,
 				BA7B3E172B72AE9B00F81921 /* EventParticipantsRow.swift */,
 				BA7B3E192B737D5C00F81921 /* EventAuthorRow.swift */,
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA7B3DDA2B6C1BAD00F81921 /* ContentView.swift in Sources */,
+				BA7B3E1C2B73B4F200F81921 /* GroupChat.swift in Sources */,
 				BA7B3DFD2B6CF8F500F81921 /* Event.swift in Sources */,
 				BA7B3DE92B6C1D6800F81921 /* SearchMapView.swift in Sources */,
 				BA7B3E0C2B70EBAF00F81921 /* SearchMapSheetRow.swift in Sources */,

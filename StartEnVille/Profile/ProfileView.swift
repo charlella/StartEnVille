@@ -69,7 +69,7 @@ struct ProfileView: View {
                         
                         ForEach(events [1...2]) { event in
                             NavigationLink {
-                                EventDetail(data: event)
+                                EventDetail(event: event)
                             } label: {
                                 ProfileEventsRow(event: event)
                             }
@@ -85,7 +85,7 @@ struct ProfileView: View {
                         //                        .multilineTextAlignment(.leading)
                         ForEach(events[0...0]) { event in
                             NavigationLink {
-                                EventDetail(data: event)
+                                EventDetail(event: event)
                             } label: {
                                 ProfileEventsRow(event: event)
                             }

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ChatView: View {
-    var isAuthor: Bool = false
-    var isParticipant: Bool = false
+    var isAuthor: Bool = true
+    var isParticipant: Bool = true
     
     var body: some View {
         NavigationView {
@@ -30,7 +30,7 @@ struct ChatView: View {
                     VStack(spacing: 0) {
                         if isAuthor || isParticipant {
                             List(events) { event in
-                                NavigationLink(destination: ChatEvent(data: event)) {
+                                NavigationLink(destination: GroupChat(event: event)) {
                                     ChatRow(event: event)
                                 }
                             }
