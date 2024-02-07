@@ -11,22 +11,22 @@ struct ContentView: View {
     @State private var showStartScreen = true
     
     var body: some View {
-//        ZStack {
-//            if showStartScreen {
-//                Image("startenville-logo")
-//                    .resizable()
-//                    .scaledToFit()
-//                    .edgesIgnoringSafeArea(.all)
-//                    .transition(.opacity)
-//                    .animation(.easeInOut(duration: 2), value: 1)
-//                    .onAppear {
-//                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//                            withAnimation {
-//                                self.showStartScreen = false
-//                            }
-//                        }
-//                    }
-//            } else {
+        ZStack {
+            if showStartScreen {
+                Image("startenville-logo")
+                    .resizable()
+                    .scaledToFit()
+                    .edgesIgnoringSafeArea(.all)
+                    .transition(.opacity)
+                    .animation(.easeInOut(duration: 2), value: 1)
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                            withAnimation {
+                                self.showStartScreen = false
+                            }
+                        }
+                    }
+            } else {
                 TabView {
                     Group {
                         SearchView()
@@ -65,8 +65,8 @@ struct ContentView: View {
                 .accentColor(Color(red: 0/255, green: 113/255, blue: 164/255))
             }
         }
-//    }
-//}
+    }
+}
 #Preview {
     ContentView()
 }

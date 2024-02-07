@@ -73,50 +73,56 @@ var events = [
         price: nil,
         author: User(
             name: "Lola",
-            photo: "lola_image.png",
+            photo: "lola_image",
             favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "sport", color: Color.purple)],
             age: 28,
+            street: "La Joliette",
             pastEvents: [],
             futureEvents: []
         ),
         participants: [
             User(
                 name: "Mireille",
-                photo: "mireille_image.png",
+                photo: "mireille_image",
                 favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "nature", color: Color.green)],
                 age: 35,
+                street: "Vieux-Port",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Mo",
-                photo: "mo_image.png",
+                photo: "mo_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
                 age: 22,
+                street: "Le Panier",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Samira",
-                photo: "samira_image.png",
+                photo: "samira_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
                 age: 23,
+                street: "Cours Julien",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Stéphanie",
-                photo: "stephanie_image.png",
+                photo: "stephanie_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "food", color: Color.blue)],
                 age: 33,
+                street: "L'Estaque",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Nina",
-                photo: "nina_image.png",
+                photo: "nina_image",
                 favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "culture", color: Color.orange)],
                 age: 29,
+                street: "Roucas Blanc",
                 pastEvents: [],
                 futureEvents: []
             )
@@ -144,34 +150,38 @@ var events = [
         price: nil,
         author: User(
             name: "Nina",
-            photo: "nina_image.png",
+            photo: "nina_image",
             favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
             age: 29,
+            street: "Roucas Blanc",
             pastEvents: [],
             futureEvents: []
         ),
         participants: [
             User(
                 name: "Mo",
-                photo: "mo_image.png",
+                photo: "mo_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
                 age: 22,
+                street: "Le Panier",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Lola",
-                photo: "lola_image.png",
+                photo: "lola_image",
                 favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "sport", color: Color.purple)],
                 age: 28,
+                street: "La Joliette",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Stéphanie",
-                photo: "stephanie_image.png",
+                photo: "stephanie_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "food", color: Color.blue)],
                 age: 33,
+                street: "L'Estaque",
                 pastEvents: [],
                 futureEvents: []
             )
@@ -199,34 +209,38 @@ var events = [
         price: nil,
         author: User(
             name: "Nina",
-            photo: "nina_image.png",
+            photo: "nina_image",
             favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
             age: 29,
+            street: "Roucas Blanc",
             pastEvents: [],
             futureEvents: []
         ),
         participants: [
             User(
                 name: "Mo",
-                photo: "mo_image.png",
+                photo: "mo_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
                 age: 22,
+                street: "Le Panier",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Lola",
-                photo: "lola_image.png",
+                photo: "lola_image",
                 favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "sport", color: Color.purple)],
                 age: 28,
+                street: "La Joliette",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Stéphanie",
-                photo: "stephanie_image.png",
+                photo: "stephanie_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "food", color: Color.blue)],
                 age: 33,
+                street: "L'Estaque",
                 pastEvents: [],
                 futureEvents: []
             )
@@ -254,34 +268,38 @@ var events = [
         price: nil,
         author: User(
             name: "Mo",
-            photo: "mo_image.png",
+            photo: "mo_image",
             favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
             age: 22,
+            street: "Le Panier",
             pastEvents: [],
             futureEvents: []
         ),
         participants: [
             User(
                 name: "Lola",
-                photo: "lola_image.png",
+                photo: "lola_image",
                 favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "nature", color: Color.green)],
                 age: 35,
+                street: "La Joliette",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Stéphanie",
-                photo: "stephanie_image.png",
+                photo: "stephanie_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "food", color: Color.blue)],
                 age: 33,
+                street: "L'Estaque",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Samira",
-                photo: "samira_image.png",
+                photo: "samira_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
                 age: 23,
+                street: "Cours Julien",
                 pastEvents: [],
                 futureEvents: []
             )
@@ -309,50 +327,56 @@ var events = [
             price: nil,
             author: User(
                 name: "Lola",
-                photo: "lola_image.png",
+                photo: "lola_image",
                 favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "sport", color: Color.purple)],
                 age: 28,
+                street: "La Joliette",
                 pastEvents: [],
                 futureEvents: []
             ),
             participants: [
                 User(
                     name: "Mireille",
-                    photo: "mireille_image.png",
+                    photo: "mireille_image",
                     favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "nature", color: Color.green)],
                     age: 35,
+                    street: "Vieux-Port",
                     pastEvents: [],
                     futureEvents: []
                 ),
                 User(
                     name: "Mo",
-                    photo: "mo_image.png",
+                    photo: "mo_image",
                     favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
                     age: 22,
+                    street: "Le Panier",
                     pastEvents: [],
                     futureEvents: []
                 ),
                 User(
                     name: "Samira",
-                    photo: "samira_image.png",
+                    photo: "samira_image",
                     favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
                     age: 23,
+                    street: "Cours Julien",
                     pastEvents: [],
                     futureEvents: []
                 ),
                 User(
                     name: "Stéphanie",
-                    photo: "stephanie_image.png",
+                    photo: "stephanie_image",
                     favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "food", color: Color.blue)],
                     age: 33,
+                    street: "L'Estaque",
                     pastEvents: [],
                     futureEvents: []
                 ),
                 User(
                     name: "Nina",
-                    photo: "nina_image.png",
+                    photo: "nina_image",
                     favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "culture", color: Color.orange)],
                     age: 29,
+                    street: "Roucas Blanc",
                     pastEvents: [],
                     futureEvents: []
                 )
@@ -380,9 +404,10 @@ var events = [
         price: nil,
         author:  User(
             name: "Mireille",
-            photo: "mireille_image.png",
+            photo: "mireille_image",
             favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "nature", color: Color.green)],
             age: 35,
+            street: "Vieux-Port",
             pastEvents: [],
             futureEvents: []
         ),
@@ -390,33 +415,37 @@ var events = [
             
             User(
                 name: "Mo",
-                photo: "mo_image.png",
+                photo: "mo_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
                 age: 22,
+                street: "Le Panier",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Samira",
-                photo: "samira_image.png",
+                photo: "samira_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
                 age: 23,
+                street: "Cours Julien",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Stéphanie",
-                photo: "stephanie_image.png",
+                photo: "stephanie_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "food", color: Color.blue)],
                 age: 33,
+                street: "L'Estaque",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Nina",
-                photo: "nina_image.png",
+                photo: "nina_image",
                 favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "culture", color: Color.orange)],
                 age: 29,
+                street: "Roucas Blanc",
                 pastEvents: [],
                 futureEvents: []
             )
@@ -444,9 +473,10 @@ var events = [
         price: 50,
         author:  User(
             name: "Mireille",
-            photo: "mireille_image.png",
+            photo: "mireille_image",
             favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "nature", color: Color.green)],
             age: 35,
+            street: "Vieux-Port",
             pastEvents: [],
             futureEvents: []
         ),
@@ -454,33 +484,37 @@ var events = [
             
             User(
                 name: "Mo",
-                photo: "mo_image.png",
+                photo: "mo_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
                 age: 22,
+                street: "Le Panier",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Samira",
-                photo: "samira_image.png",
+                photo: "samira_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
                 age: 23,
+                street: "Cours Julien",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Stéphanie",
-                photo: "stephanie_image.png",
+                photo: "stephanie_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "food", color: Color.blue)],
                 age: 33,
+                street: "L'Estaque",
                 pastEvents: [],
                 futureEvents: []
             ),
             User(
                 name: "Nina",
-                photo: "nina_image.png",
+                photo: "nina_image",
                 favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "culture", color: Color.orange)],
                 age: 29,
+                street: "Roucas Blanc",
                 pastEvents: [],
                 futureEvents: []
             )
@@ -508,9 +542,10 @@ var events = [
             price: nil,
             author:  User(
                 name: "Stéphanie",
-                photo: "stephanie_image.png",
+                photo: "stephanie_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "food", color: Color.blue)],
                 age: 33,
+                street: "L'Estaque",
                 pastEvents: [],
                 futureEvents: []
             ),
@@ -518,26 +553,29 @@ var events = [
                
                 User(
                     name: "Mo",
-                    photo: "mo_image.png",
+                    photo: "mo_image",
                     favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
                     age: 22,
+                    street: "Le Panier",
                     pastEvents: [],
                     futureEvents: []
                 ),
                 User(
                     name: "Samira",
-                    photo: "samira_image.png",
+                    photo: "samira_image",
                     favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
                     age: 23,
+                    street: "Cours Julien",
                     pastEvents: [],
                     futureEvents: []
                 ),
                
                 User(
                     name: "Nina",
-                    photo: "nina_image.png",
+                    photo: "nina_image",
                     favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "culture", color: Color.orange)],
                     age: 29,
+                    street: "Roucas Blanc",
                     pastEvents: [],
                     futureEvents: []
                 )
@@ -565,27 +603,30 @@ var events = [
         price: nil,
         author: User(
             name: "Samira",
-            photo: "samira_image.png",
+            photo: "samira_image",
             favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
             age: 23,
+            street: "Cours Julien",
             pastEvents: [],
             futureEvents: []
         ),
         participants: [
             User(
                 name: "Mo",
-                photo: "mo_image.png",
+                photo: "mo_image",
                 favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
                 age: 22,
+                street: "Le Panier",
                 pastEvents: [],
                 futureEvents: []
             ),
             
             User(
                 name: "Nina",
-                photo: "nina_image.png",
+                photo: "nina_image",
                 favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "culture", color: Color.orange)],
                 age: 29,
+                street: "Roucas Blanc",
                 pastEvents: [],
                 futureEvents: []
             )
