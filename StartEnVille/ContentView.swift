@@ -13,14 +13,15 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             if showStartScreen {
-                Image("startenville-logo")
-                    .resizable()
-                    .scaledToFit()
-                    .edgesIgnoringSafeArea(.all)
+//                Image("startenville-logo")
+                LoadingPage()
+                   // .resizable()
+//                    .scaledToFit()
+                    //.edgesIgnoringSafeArea(.all)
                     .transition(.opacity)
-                    .animation(.easeInOut(duration: 2), value: 1)
+//                    .animation(.easeInOut(duration: 1), value: 1)
                     .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                             withAnimation {
                                 self.showStartScreen = false
                             }

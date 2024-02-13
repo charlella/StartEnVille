@@ -63,7 +63,7 @@ var events = [
             var components = DateComponents()
             components.year = 2024
             components.month = 2
-            components.day = 11
+            components.day = 9
             components.hour = 12
             components.minute = 0
             components.timeZone = TimeZone(identifier: "Europe/Paris")
@@ -141,8 +141,8 @@ var events = [
             var components = DateComponents()
             components.year = 2024
             components.month = 2
-            components.day = 17
-            components.hour = 10
+            components.day = 9
+            components.hour = 14
             components.minute = 0
             components.timeZone = TimeZone(identifier: "Europe/Paris")
             return Calendar.current.date(from: components)!
@@ -201,8 +201,8 @@ var events = [
             var components = DateComponents()
             components.year = 2024
             components.month = 2
-            components.day = 17
-            components.hour = 10
+            components.day = 9
+            components.hour = 16
             components.minute = 0
             components.timeZone = TimeZone(identifier: "Europe/Paris")
             return Calendar.current.date(from: components)!
@@ -533,7 +533,7 @@ var events = [
     Event(
             title: "Apéro",
             photo: "apero",
-            location: CLLocationCoordinate2D(latitude: 43.269827, longitude: 5.3958873),
+            location: CLLocationCoordinate2D(latitude: 43.296229541923765, longitude: 5.390839428472272),
             address: Address(place: "Le Bar de la Plaine", number: "57", street: "Pl Jean Jaurès", city: "Marseille", postalCode: "13005"),
             dateTime: {
                 var components = DateComponents()
@@ -643,7 +643,127 @@ var events = [
         categories: [EventCategory(name: "culture", color: Color.orange), EventCategory(name: "start", color: Color.yellow)],
         discussion: [],
         isFavorite: false
-    )
+    ),
+    Event(
+        title: "Rando Calanques",
+        photo: "randocalanques",
+        location: CLLocationCoordinate2D(latitude: 43.2109, longitude: 5.4459),
+        address: Address(place: "Morgiou", number: "", street: "", city: "", postalCode: ""),
+        dateTime: {
+            var components = DateComponents()
+            components.year = 2024
+            components.month = 2
+            components.day = 2
+            components.hour = 14
+            components.minute = 0
+            components.timeZone = TimeZone(identifier: "Europe/Paris")
+            return Calendar.current.date(from: components)!
+        }(),
+        description: "Randonnée dans les calanques, organisée par Nina. Profitez de la nature et de l'exercice!",
+        isFree: true,
+        price: nil,
+        author: User(
+            name: "Nina",
+            photo: "nina_image",
+            favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+            age: 29,
+            street: "Roucas Blanc",
+            pastEvents: [],
+            futureEvents: []
+        ),
+        participants: [
+            User(
+                name: "Mo",
+                photo: "mo_image",
+                favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+                age: 22,
+                street: "Le Panier",
+                pastEvents: [],
+                futureEvents: []
+            ),
+            User(
+                name: "Lola",
+                photo: "lola_image",
+                favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "sport", color: Color.purple)],
+                age: 28,
+                street: "La Joliette",
+                pastEvents: [],
+                futureEvents: []
+            ),
+            User(
+                name: "Stéphanie",
+                photo: "stephanie_image",
+                favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "food", color: Color.blue)],
+                age: 33,
+                street: "L'Estaque",
+                pastEvents: [],
+                futureEvents: []
+            )
+        ],
+        categories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+        discussion: [],
+        isFavorite: false
+    ),
+    Event(
+        title: "Parc Longchamp",
+        photo: "palaislongchamp",
+        location: CLLocationCoordinate2D(latitude: 43.3049, longitude: 5.3942),
+        address: Address(place: "Longchamp", number: "", street: "", city: "", postalCode: ""),
+        dateTime: {
+            var components = DateComponents()
+            components.year = 2024
+            components.month = 2
+            components.day = 4
+            components.hour = 16
+            components.minute = 0
+            components.timeZone = TimeZone(identifier: "Europe/Paris")
+            return Calendar.current.date(from: components)!
+        }(),
+        description: "Randonnée dans les calanques, organisée par Nina. Profitez de la nature et de l'exercice!",
+        isFree: true,
+        price: nil,
+        author: User(
+            name: "Nina",
+            photo: "nina_image",
+            favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+            age: 29,
+            street: "Roucas Blanc",
+            pastEvents: [],
+            futureEvents: []
+        ),
+        participants: [
+            User(
+                name: "Mo",
+                photo: "mo_image",
+                favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "sport", color: Color.purple)],
+                age: 22,
+                street: "Le Panier",
+                pastEvents: [],
+                futureEvents: []
+            ),
+            User(
+                name: "Lola",
+                photo: "lola_image",
+                favoriteCategories: [EventCategory(name: "food", color: Color.blue), EventCategory(name: "sport", color: Color.purple)],
+                age: 28,
+                street: "La Joliette",
+                pastEvents: [],
+                futureEvents: []
+            ),
+            User(
+                name: "Stéphanie",
+                photo: "stephanie_image",
+                favoriteCategories: [EventCategory(name: "nature", color: Color.green), EventCategory(name: "food", color: Color.blue)],
+                age: 33,
+                street: "L'Estaque",
+                pastEvents: [],
+                futureEvents: []
+            )
+        ],
+        categories: [EventCategory(name: "culture", color: Color.orange), EventCategory(name: "langue", color: Color.pink)],
+        discussion: [],
+        isFavorite: false
+    ),
     ]
 
 

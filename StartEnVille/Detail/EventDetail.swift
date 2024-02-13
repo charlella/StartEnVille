@@ -12,7 +12,7 @@ struct EventDetail: View {
     @State var event: Event
     
     var body: some View {
-        NavigationStack {
+        VStack {
             VStack {
                 //                HStack {
                 //                    Spacer()
@@ -53,7 +53,7 @@ struct EventDetail: View {
                     //Spacer()
                     RoundedRectangle(cornerRadius: 20)
                         .foregroundStyle(.gray.opacity(0.15))
-                        .frame(width: 350, height: 310)
+                        .frame(width: 350, height: 280)
                         .overlay {
                             VStack(alignment: .center, spacing: 0.5) {
                                 Image(event.photo)
@@ -71,7 +71,7 @@ struct EventDetail: View {
                                     
                                     Text(event.title)
                                         .font(.title)
-                                        .padding()
+                                        //.padding()
                                     
                                     
                                     Button(action: {
@@ -111,7 +111,7 @@ struct EventDetail: View {
                             .fontWeight(.bold)
                             .padding()
                             .background(RoundedRectangle(cornerRadius: 10).foregroundColor(Color(red: 0/255, green: 113/255, blue: 164/255)))
-                            .padding(.top, 20)
+                            .padding(.vertical, 5)
                     }
                 }
             }

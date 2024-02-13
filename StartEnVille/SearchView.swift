@@ -11,7 +11,7 @@ struct SearchView: View {
     @State private var searchText = ""
     @State private var selectedMenu = "Carte"
     
-    //var event: Event
+//    var event: Event
     
     var body: some View {
         NavigationStack {
@@ -24,9 +24,11 @@ struct SearchView: View {
                                        .font(.title.bold())
                                        .accessibilityAddTraits(.isHeader)
                                        .padding(.leading, 50)
-                                   Image(systemName: "play.circle.fill")
-                                       .font(.title.bold())
-                                       .padding(.leading, 20)
+                                   NavigationLink(destination: StartView()) {
+                                                   Image(systemName: "play.circle.fill")
+                                                       .font(.title.bold())
+                                                       .padding(.leading, 20)
+                                               }
                                    Spacer()
                                }
                                .foregroundStyle(Color(red: 255/255, green: 204/255, blue: 0/255))

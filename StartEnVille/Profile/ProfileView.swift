@@ -11,7 +11,7 @@ struct ProfileView: View {
     
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             //Form {
                 //Début du HEADER
                 //                        ZStack(alignment: .top) {
@@ -67,7 +67,7 @@ struct ProfileView: View {
                             .foregroundColor(Color(red: 0/255, green: 113/255, blue: 164/255))
                             .padding(.top)
                         
-                        ForEach(events [1...2]) { event in
+                        ForEach(events [9...10]) { event in
                             NavigationLink {
                                 EventDetail(event: event)
                             } label: {

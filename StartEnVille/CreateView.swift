@@ -91,7 +91,7 @@ struct CreateView: View {
                 //
 //            Form {
                 Section(header: Text("Détails de l'évènement")) {
-                    TextField("Nom du lieu", text: $name)
+                    TextField("Nom du lieu / évènement", text: $name)
                     TextField("Adresse", text: $adress)
                     DatePicker("Date de l'évènement", selection: $currentDate, displayedComponents: [.date, .hourAndMinute])
                         .labelsHidden()

@@ -17,6 +17,7 @@ struct SearchListView: View {
                             Text("Aujourd'hui:")
                                 .font(.title)
                                 .fontWeight(.bold)
+                                .padding()
                             
                             ScrollView(.horizontal) {
                                 HStack  {

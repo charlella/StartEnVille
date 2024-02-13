@@ -71,8 +71,8 @@ struct GroupChat: View {@State var text = ""
         
         List {
             
-            MessageRow(text: "Salut, je suis content de vous rencontrer !", isSender: true, time: "Yesterday 9:41")
-            MessageRow(text: "Bonjour, c'est pareil pour moi ! Il est prévu qu'il fait beau, alors profitons-en ☀️  ", isSender: false, time: "Read 10:02 AM")
+            MessageRow(text: "Salut, j'ai hâte de vous rencontrer !", isSender: true, time: "Yesterday 9:41")
+            MessageRow(text: "Bonjour, c'est pareil pour moi ! Il fera beau, alors profitons-en ☀️  ", isSender: false, time: "Read 10:02 AM")
             MessageRow(text: "Super !", isSender: true, time: "10:35 AM")
             MessageRow(text: "A bientôt! ", isSender: true, time: "11:45 AM")
             
@@ -104,6 +104,7 @@ struct GroupChat: View {@State var text = ""
             }
             
         }
+        .padding(.bottom, 10)
         
     }
 }
