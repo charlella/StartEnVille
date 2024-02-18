@@ -8,87 +8,54 @@
 import SwiftUI
 
 struct SearchListView: View {
+    @Binding var searchText: String
+    var allEvents: [Event]
+    
+    var filteredEvents: [Event] {
+        if searchText.isEmpty {
+            return allEvents
+        } else {
+            return allEvents.filter { $0.title.localizedCaseInsensitiveContains(searchText) }
+        }
+    }
+    
+    var todayEvents: [Event] {
+        let today = Date()
+        return filteredEvents.filter { Calendar.current.isDate($0.dateTime, inSameDayAs: today) }
+    }
+    
+    var thisWeekEvents: [Event] {
+        let startOfWeek = Calendar.current.date(from: Calendar.current.dateComponents([.yearForWeekOfYear, .weekOfYear], from: Date()))!
+        let endOfWeek = Calendar.current.date(byAdding: .day, value: 7, to: startOfWeek)!
+        return filteredEvents.filter { startOfWeek...endOfWeek ~= $0.dateTime }
+    }
+    
+    var thisMonthEvents: [Event] {
+        let startOfMonth = Calendar.current.date(from: Calendar.current.dateComponents([.year, .month], from: Date()))!
+        let endOfMonth = Calendar.current.date(byAdding: .month, value: 1, to: startOfMonth)!
+        return filteredEvents.filter { startOfMonth...endOfMonth ~= $0.dateTime }
+    }
+    
     var body: some View {
+        VStack {
             NavigationView {
                 ScrollView(.vertical) {
-                    
-                    VStack {
-                        VStack(alignment: .leading) {
-                            Text("Aujourd'hui:")
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .padding()
-                            
-                            ScrollView(.horizontal) {
-                                HStack  {
-                                    ForEach(events [0...2]) { event in
-                                        NavigationLink {
-                                            EventDetail(event: event)
-                                        } label: {
-                                            ListRow(event: event)
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .padding(.top, 70)
-                        .padding(.horizontal)
-                        
-                        VStack(alignment: .leading) {
-                            Text("Cette semaine:")
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .padding()
-                            
-                            
-                            ScrollView(.horizontal) {
-                                HStack  {
-                                    ForEach(events [3...5]) { event in
-                                        NavigationLink {
-                                            EventDetail(event: event)
-                                        } label: {
-                                            ListRow(event: event)
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .padding(.horizontal)
-                        //                        Spacer()
-                        
-                        VStack(alignment: .leading) {
-                            Text("Ce mois:")
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .padding()
-                            ScrollView(.horizontal) {
-                                HStack  {
-                                    ForEach(events [6...8]) { event in
-                                        NavigationLink {
-                                            EventDetail(event: event)
-                                        } label: {
-                                            ListRow(event: event)
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .padding(.horizontal)
-                    }
-//                        Spacer()
-                    
-//                            .navigationTitle("list")
-                        
-                        
-                        
-                        
-                        
-                        
-                    }
+                    SectionRow(title: "Aujourd'hui", events: todayEvents)
+                    SectionRow(title: "Cette semaine", events: thisWeekEvents)
+                    SectionRow(title: "Ce mois-ci", events: thisMonthEvents)
                 }
+                .padding(.top, 50)
+//                .padding(.horizontal)
+                .padding(.leading)
             }
+//            .padding(.horizontal)
+            .navigationTitle("Events")
         }
+    }
+}
 
 #Preview {
-    SearchListView()
+
+            
+    return SearchListView(searchText: .constant(""), allEvents: [events[0], events[1]])
 }

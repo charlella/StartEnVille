@@ -33,14 +33,14 @@ struct SearchView: View {
                                }
                                .foregroundStyle(Color(red: 255/255, green: 204/255, blue: 0/255))
                                SearchBar(text: $searchText, placeholder: "Rechercher un évènement")
-                                   .padding()
+                                   .padding(.vertical)
                            }
                            .background(Color(red: 0/255, green: 113/255, blue: 164/255))
                            
                            if selectedMenu == "Carte" {
                                SearchMapView(events: filteredEvents, categories: categories)
                            } else {
-                               SearchListView()
+                               SearchListView(searchText: $searchText, allEvents: events)
                            }
                        }
                        

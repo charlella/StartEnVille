@@ -17,7 +17,7 @@ struct SearchBar: View {
                 .foregroundColor(.white)
                 .padding(.leading, 8)
             TextField(placeholder, text: $text)
-                .frame(width: 300)
+//                .frame(width: 250)
                 .padding(8)
                 .background(.white)
                 .cornerRadius(8)
@@ -36,8 +36,10 @@ struct SearchBar: View {
                 }) {
                     Image(systemName: "xmark.circle.fill")
                         .foregroundColor(.white)
+                        .padding(.trailing, 8)
                 }
-                .padding(.trailing, 8)
+            } else {
+                Spacer().frame(width: 36)
             }
         }
         .padding(.horizontal)
